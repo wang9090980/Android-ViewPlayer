@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ViewPlayer</string>
+    
+    <string-array name="autoPlayGallery_urls2">  
+        <item>http://img.pconline.com.cn/images/upload/upc/tx/wallpaper/1311/12/c0/28564810_1384238874717_800x600.jpg</item>
+        <item>http://img.pconline.com.cn/images/upload/upc/tx/wallpaper/1311/08/c2/28450344_1383907997812_800x600.jpg</item>
+        <item>http://img.pconline.com.cn/images/upload/upc/tx/wallpaper/1311/08/c2/28450360_1383908020393_800x600.jpg</item>
+        <item>http://img.pconline.com.cn/images/upload/upc/tx/wallpaper/1311/08/c2/28450354_1383908015296_800x600.jpg</item>
+        <item>http://img.pconline.com.cn/images/upload/upc/tx/wallpaper/1311/08/c2/28450351_1383908012501_800x600.jpg</item>
+    </string-array>
+</resources>
