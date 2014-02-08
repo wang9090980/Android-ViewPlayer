@@ -47,10 +47,10 @@ public class MainActivity extends Activity {
 		picturePlayerCircleRightToLeft.setPlayWay(PlayWay.CIRCLE_RIGHT_TO_LEFT);
 		
 		picturePlayerSwingLeftToRight.setViewPlayAdapter(new PicturePlayAdapter(getBaseContext(), pictures));
-		picturePlayerSwingLeftToRight.setPlayWay(PlayWay.SWING_LEFT_TO_RIGHT);
+		picturePlayerSwingLeftToRight.setPlayWay(PlayWay.SWING);
 		
 		picturePlayerSwingRightToLeft.setViewPlayAdapter(new PicturePlayAdapter(getBaseContext(), pictures));
-		picturePlayerSwingRightToLeft.setPlayWay(PlayWay.SWING_RIGHT_TO_LEFT);
+//		picturePlayerSwingRightToLeft.setPlayWay(PlayWay.SWING_RIGHT_TO_LEFT);
 	}
 
 	@Override

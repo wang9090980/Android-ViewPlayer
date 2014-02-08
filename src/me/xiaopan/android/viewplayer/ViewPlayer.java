@@ -108,12 +108,9 @@ public class ViewPlayer extends FrameLayout{
 					defaultPosition = viewPlayAdapter.getList().size() > 1?((Integer.MAX_VALUE/viewPlayAdapter.getList().size())/2)*viewPlayAdapter.getList().size():0;//那么默认选中项是最中间那一组的第一张
 				}else if(playWay == PlayWay.CIRCLE_RIGHT_TO_LEFT){//如果播放方式是从右向左转圈
 					defaultPosition = viewPlayAdapter.getList().size() > 1?((Integer.MAX_VALUE/viewPlayAdapter.getList().size())/2)*viewPlayAdapter.getList().size() + viewPlayAdapter.getList().size() -1:0;//那么默认选中项是最中间那一组的最后一张
-				}else if(playWay == PlayWay.SWING_LEFT_TO_RIGHT){//如果播放方式是从左向右摇摆
+				}else if(playWay == PlayWay.SWING){//如果播放方式是从左向右摇摆
 					defaultPosition = 0;//那么默认选中项是第一组的第一张
 					currentTowardsTheRight = true;//播放方向将是向右
-				}else if(playWay == PlayWay.SWING_RIGHT_TO_LEFT){//如果播放方式是从右向左摇摆
-					defaultPosition = viewPlayAdapter.getList().size() -1;//那么默认选中项是第一组的最后一张
-					currentTowardsTheRight = false;//播放方向将是向左
 				}
 				viewGallery.setSelection(defaultPosition);
 				
@@ -315,7 +312,7 @@ public class ViewPlayer extends FrameLayout{
 					viewGallery.onKeyDown(KeyEvent.KEYCODE_DPAD_RIGHT, null);
 				}else if(playWay == PlayWay.CIRCLE_RIGHT_TO_LEFT){
 					viewGallery.onKeyDown(KeyEvent.KEYCODE_DPAD_LEFT, null);
-				}else if(playWay == PlayWay.SWING_LEFT_TO_RIGHT || playWay == PlayWay.SWING_RIGHT_TO_LEFT){
+				}else if(playWay == PlayWay.SWING){
 					//如果当前是向右播放
 					if(currentTowardsTheRight){
 						//如果到最后一个了

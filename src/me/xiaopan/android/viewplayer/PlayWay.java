@@ -31,12 +31,7 @@ public enum PlayWay {
 	CIRCLE_LEFT_TO_RIGHT, 
 	
 	/**
-	 * 从右往左摇摆
+	 * 摇摆
 	 */
-	SWING_RIGHT_TO_LEFT, 
-	
-	/**
-	 * 从左往右摇摆
-	 */
-	SWING_LEFT_TO_RIGHT;
+	SWING;
 }
